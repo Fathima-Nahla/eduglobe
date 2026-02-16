@@ -1,0 +1,1441 @@
+/* ----------------------------
+ Font Family
+ --------------------------- */
+
+/* instrument sans */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap");
+
+/* poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* dm sans */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* ----------------------------
+ Loading Spinner Styles
+ --------------------------- */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.loading-spinner {
+  text-align: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #e3e3e3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+.loading-spinner p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Author component container */
+.subjects-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+
+  /* Avatar container */
+  .subavatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+
+    /* Avatar image */
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* Responsive adjustments for avatar */
+    @media (max-width: 768px) {
+      width: 18px;
+      height: 18px;
+    }
+
+    @media (max-width: 480px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  /* Author name text */
+  .subtext {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* Responsive adjustments for text */
+    @media (max-width: 768px) {
+      font-size: 11px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 10px;
+    }
+  }
+
+  /* Responsive adjustments for container */
+  @media (max-width: 768px) {
+    gap: 6px;
+  }
+}
+
+.subavataar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+
+  /* Avatar image */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+}
+
+.tutor-card {
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #f1f3f4;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tutor-card .tutor-image {
+  width: 100%;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+
+.tutor-card .tutor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tutor-card .tutor-info {
+  text-align: left;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.tutor-card .tutor-info .tutor-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.tutor-card .tutor-info .tutor-expertise {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.tutor-card .tutor-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.tutor-card .tutor-action .book-btn {
+  flex: 1;
+  padding: 14px 24px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tutor-card .tutor-action .book-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.tutor-card .tutor-action .book-btn:active {
+  transform: scale(0.98);
+}
+
+.tutor-card .tutor-action .price-tag {
+  width: 56px;
+  height: 56px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Grid Container */
+.tutors-grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+  .tutors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .tutor-card .tutor-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .tutor-card .tutor-action {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tutors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 640) and (max-width: 767) {
+  .tutor-card .tutor-info {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .tutor-card .tutor-action {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 639px) {
+  .tutors-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Responsive adjustments for card - Tablet */
+@media (max-width: 768px) {
+  .tutor-card {
+    gap: 16px;
+  }
+
+  .tutor-card .tutor-info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .tutor-card .tutor-info .tutor-name {
+    font-size: 22px;
+  }
+
+  .tutor-card .tutor-info .tutor-expertise {
+    font-size: 15px;
+  }
+
+  .tutor-card .tutor-action {
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .tutor-card .tutor-action .book-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .tutor-card .tutor-action .price-tag {
+    width: 52px;
+    height: 52px;
+    font-size: 17px;
+  }
+}
+
+/* Responsive adjustments for card - Mobile */
+@media (max-width: 480px) {
+  .tutor-card {
+    gap: 14px;
+  }
+
+  .tutor-card .tutor-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .tutor-card .tutor-action {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+
+  .tutor-card .tutor-info .tutor-name {
+    font-size: 20px;
+  }
+
+  .tutor-card .tutor-info .tutor-expertise {
+    font-size: 14px;
+  }
+
+  .tutor-card .tutor-action .book-btn {
+    padding: 11px 18px;
+    font-size: 14px;
+  }
+
+  .tutor-card .tutor-action .price-tag {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+  }
+}
+
+.pricing-title {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 3rem;
+}
+
+/* Extra Extra Large devices (1400px and below) */
+@media (max-width: 1399px) {
+  .pricing-title {
+    font-size: 48px;
+  }
+}
+
+/* Extra Large devices (1200px and below) */
+@media (max-width: 1199px) {
+  .pricing-title {
+    font-size: 42px;
+  }
+}
+
+/* Large devices (992px and below) */
+@media (max-width: 991px) {
+  .pricing-title {
+    font-size: 34px;
+  }
+}
+
+/* Medium devices (768px and below) */
+@media (max-width: 767px) {
+  .pricing-title {
+    font-size: 32px;
+  }
+}
+
+/* Small devices (576px and below) */
+@media (max-width: 575px) {
+  .pricing-title {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+}
+
+.footersec-subtitle {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  &:before {
+    content: url("/images/footer/star.svg");
+    margin-inline-end: 14px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+  }
+
+  &.light {
+    &:before {
+      content: url("/images/footer/star.svg");
+    }
+  }
+}
+
+/* Hide scrollbar for horizontal scroll containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.grades-card {
+  background: black;
+  border-radius: 10px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.grades-card .grades-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+
+.grades-card .grades-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.grades-card .grades-info {
+  text-align: left;
+  /* padding-left: 24px;
+  padding-right: 24px; */
+  margin-bottom: -7px;
+}
+
+.grades-card .grades-info .grades-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.grades-card .grades-info .grades-expertise {
+  font-size: 16px;
+  font-weight: 100;
+  color: rgb(235, 235, 235);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.grades-card .grades-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  /* padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px; */
+}
+
+.grades-card .grades-action .book-btn {
+  flex: 1;
+  padding: 14px 24px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.grades-card .grades-action .book-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.grades-card .grades-action .book-btn:active {
+  transform: scale(0.98);
+}
+
+.grades-card .grades-action .price-tag {
+  width: 56px;
+  height: 56px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Grid Container */
+.gradess-grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+  .gradess-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* @media (min-width: 1024px) and (max-width: 1199px) {
+  .grades-card .grades-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .grades-card .grades-action {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+} */
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gradess-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media (min-width: 640) and (max-width: 767) {
+  .grades-card .grades-info {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .grades-card .grades-action {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+  }
+} */
+
+/* Mobile: 1 column */
+@media (max-width: 639px) {
+  .gradess-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Responsive adjustments for card - Tablet */
+@media (max-width: 768px) {
+  .grades-card {
+    gap: 16px;
+  }
+
+  .grades-card .grades-image {
+    aspect-ratio: 6/4;
+  }
+
+  /* .grades-card .grades-info {
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+
+  .grades-card .grades-info .grades-name {
+    font-size: 22px;
+  }
+
+  .grades-card .grades-info .grades-expertise {
+    font-size: 15px;
+  }
+
+  .grades-card .grades-action {
+    gap: 10px;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; */
+  }
+
+  .grades-card .grades-action .book-btn {
+    /* padding: 12px 20px; */
+    font-size: 15px;
+  }
+
+  .grades-card .grades-action .price-tag {
+    width: 52px;
+    height: 52px;
+    font-size: 17px;
+  }
+}
+
+/* Responsive adjustments for card - Mobile */
+@media (max-width: 480px) {
+  .grades-card {
+    gap: 14px;
+  }
+  /* 
+  .grades-card .grades-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  } */
+
+  /* .grades-card .grades-action {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  } */
+
+  .grades-card .grades-info .grades-name {
+    font-size: 20px;
+  }
+
+  .grades-card .grades-info .grades-expertise {
+    font-size: 14px;
+  }
+
+  .grades-card .grades-action .book-btn {
+    /* padding: 11px 18px; */
+    font-size: 14px;
+  }
+
+  .grades-card .grades-action .price-tag {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+  }
+}
+
+.grades-card {
+  @media (min-width: 980px) {
+    max-width: 374px;
+  }
+
+  @media (min-width: 769px) {
+    max-width: 462px;
+  }
+  .btn-wrapper {
+    margin-bottom: 5px;
+  }
+  .t-btn-primary {
+    background-color: black;
+    border-color: white;
+    color: white;
+  }
+
+  .t-btn-circle {
+    background-color: black;
+    border-color: white;
+    color: white;
+  }
+
+  .t-btn-primary:hover {
+    background-color: black;
+    border-color: var(--action);
+    color: var(--action);
+  }
+
+  .t-btn-circle:hover {
+    background-color: black;
+    border-color: var(--action);
+    color: var(--action);
+  }
+}
+
+.self-grade {
+  /* Tutor Card */
+  .tutor-card-item {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    /* // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    /* transition: box-shadow 0.3s ease; */
+    @media (min-width: 980px) {
+      max-width: 374px;
+    }
+
+    @media (min-width: 769px) {
+      max-width: 462px;
+    }
+  }
+
+  /* .tutor-card-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } */
+
+  /* Banner Section */
+  .tutor-banner-section {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 0.8rem;
+    border-radius: 10px;
+    height: 150px;
+    position: relative;
+    overflow: visible;
+  }
+
+  .tutor-profile-container {
+    position: absolute;
+    bottom: -44px;
+    left: 0px; /* or any spacing you prefer, e.g. 16px or 32px */
+    transform: none; /* remove the centering transform */
+  }
+
+  .tutor-profile-wrapper {
+    position: relative;
+  }
+
+  .tutor-profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* // border: 4px solid white; */
+    object-fit: cover;
+    display: block;
+  }
+
+  .tutor-info-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Name + Icon Row */
+  .tutor-name-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* // margin-bottom: 4px; */
+  }
+
+  /* Icon next to tutor name */
+  .tutor-info-icon {
+    width: 46px;
+    height: 46px;
+    /* // border-radius: 50%; */
+    /* // border: 1px solid #e5e7eb; */
+    padding: 4px;
+    background-color: #f8f8f8;
+    /* // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); */
+    object-fit: contain;
+  }
+
+  .info-icon {
+    width: 16px;
+    height: 16px;
+    color: #6b7280;
+    stroke-width: 2;
+  }
+
+  /* Card Content */
+  .tutor-card-content {
+    margin-top: 2rem;
+    padding: 15px 24px 24px;
+    text-align: left;
+  }
+
+  .tutor-name {
+    font-size: 24px;
+    font-weight: 500 !important;
+    color: #111827;
+    margin: 0 0 4px 0;
+    font-style: bold;
+  }
+
+  .tutor-qualification {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0 0 16px 0;
+  }
+
+  /* Badge */
+  .tutor-teaching-badge {
+    display: inline-block;
+    padding: 6px 16px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  /* // /* Stats Section */
+  /* // .tutor-stats { */
+  /* //   display: flex; */
+  /* //   justify-content: flex-start; align items to the left */
+  /* //   gap: 24px; spacing between each stat item */
+  /* //   margin-bottom: 24px; */
+  /* //   text-align: left; */
+  /* // } */
+
+
+/* Booking Button */
+.booking-button {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .booking-button:hover {
+    background-color: #1f2937;
+  }
+
+  .tutor-stats {
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+    margin-bottom: 24px;
+    text-align: left;
+    /* // border-top: 1px solid #e5e7eb; optional subtle top line */
+    /* // border-bottom: 1px solid #e5e7eb; optional subtle bottom line */
+    padding: 12px 0;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 10px;
+  }
+
+  /* Add vertical divider lines on the left */
+  /* Add vertical divider lines in the middle between stats */
+  .stat-item:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: -24px; /* Half of the gap between stats (48px gap / 2) */
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background-color: #d1d5db; /* light grey divider line */
+  }
+
+  /* Stat text */
+  .stat-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 18px;
+    font-weight: 600 !important;
+    color: #111827;
+    margin-bottom: 4px;
+  }
+
+  .star-emoji {
+    color: #000 !important;
+  }
+
+  .stat-label {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tutors-wrapper {
+      padding: 32px 12px 72px 12px;
+    }
+
+    .tutors-title {
+      font-size: 32px;
+    }
+
+    .tutors-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .nav-button {
+      width: 36px;
+      height: 36px;
+    }
+
+    .nav-icon {
+      width: 18px;
+      height: 18px;
+    }
+    .tutor-stats {
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tutors-header-section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .tutors-navigation {
+      align-self: flex-start;
+      margin-top: 1px;
+    }
+    .tutors-title {
+      margin-bottom: 5px;
+      margin-top: 3rem;
+    }
+    .booking-button {
+      font-size: 13px;
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .tutor-stats {
+      gap: 20px;
+    }
+    .stat-item:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      left: -16px; /* Half of the gap between stats (48px gap / 2) */
+    }
+  }
+}
+
+.self-tutor {
+  /* Tutor Card */
+  .tutor-card-item {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    /* // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    /* transition: box-shadow 0.3s ease; */
+    @media (min-width: 980px) {
+      max-width: 374px;
+    }
+
+    @media (min-width: 769px) {
+      max-width: 462px;
+    }
+  }
+
+  /* .tutor-card-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } */
+
+  /* Banner Section */
+  .tutor-banner-section {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-top: 0.7rem;
+    border-radius: 10px;
+    height: 160px;
+    position: relative;
+  }
+
+  /* Name + Icon Row */
+  .tutor-name-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* // margin-bottom: 4px; */
+  }
+
+  /* Icon next to tutor name */
+  .tutor-info-icon {
+    width: 46px;
+    height: 46px;
+    /* // border-radius: 50%; */
+    /* // border: 1px solid #e5e7eb; */
+    padding: 4px;
+    background-color: #f8f8f8;
+    /* // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); */
+    object-fit: contain;
+  }
+
+  .info-icon {
+    width: 16px;
+    height: 16px;
+    color: #6b7280;
+    stroke-width: 2;
+  }
+
+  /* Card Content */
+  .tutor-card-content {
+    padding: 0px 24px 15px 24px;
+    text-align: left;
+  }
+
+  .tutor-name {
+    font-size: 24px;
+    font-weight: 500 !important;
+    color: #111827;
+    margin: 0 0 0 0;
+    font-style: bold;
+  }
+
+  .tutor-qualification {
+    font-size: 14px;
+    color: #6b7280;
+    margin: -2px 0 8px 0;
+  }
+
+  .tutor-subsubsub {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    img {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  .tutor-subsub {
+    font-size: 14.5px;
+    color: #525355;
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+  }
+
+  .tutor-subsubbbb::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 80%;
+    background-color: #525355;
+    margin-inline-end: 3px;
+  }
+
+  .tutor-desc {
+    font-size: 15.5px;
+    line-height: 1.3;
+    color: #525355;
+    margin: 0 0 16px 0;
+  }
+
+  /* Badge */
+  .tutor-teaching-badge {
+    display: inline-block;
+    padding: 6px 16px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* // Stats Section */
+  /* // .tutor-stats { */
+  /* //   display: flex; */
+  /* //   justify-content: flex-start; align items to the left */
+  /* //   gap: 24px; spacing between each stat item */
+  /* //   margin-bottom: 24px; */
+  /* //   text-align: left; */
+  /* // } */
+
+  /* Booking Button */
+  .booking-button {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .booking-button:hover {
+    background-color: #1f2937;
+  }
+
+  .tutor-stats {
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+    margin-bottom: 24px;
+    text-align: left;
+    /* // border-top: 1px solid #e5e7eb; optional subtle top line */
+    /* // border-bottom: 1px solid #e5e7eb; optional subtle bottom line */
+    padding: 12px 0;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 10px;
+  }
+
+  /* Add vertical divider lines on the left */
+  /* Add vertical divider lines in the middle between stats */
+  .stat-item:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: -24px; /* Half of the gap between stats (48px gap / 2) */
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background-color: #d1d5db; /* light grey divider line */
+  }
+
+  /* Stat text */
+  .stat-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 18px;
+    font-weight: 600 !important;
+    color: #111827;
+    margin-bottom: 4px;
+  }
+
+  .star-emoji {
+    color: #000 !important;
+  }
+
+  .stat-label {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tutors-wrapper {
+      padding: 32px 12px 72px 12px;
+    }
+
+    .tutors-title {
+      font-size: 32px;
+    }
+
+    .tutors-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .nav-button {
+      width: 36px;
+      height: 36px;
+    }
+
+    .nav-icon {
+      width: 18px;
+      height: 18px;
+    }
+    .tutor-stats {
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tutors-header-section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .tutors-navigation {
+      align-self: flex-start;
+      margin-top: 1px;
+    }
+    .tutors-title {
+      margin-bottom: 5px;
+      margin-top: 3rem;
+    }
+    .booking-button {
+      font-size: 13px;
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .tutor-stats {
+      gap: 20px;
+    }
+    .stat-item:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      left: -16px; /* Half of the gap between stats (48px gap / 2) */
+    }
+  }
+}
+
+.pricinggg-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1399px) {
+  .pricinggg-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .pricinggg-title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pricinggg-title {
+    font-size: 34px;
+  }
+}
+
+.pricinggg-subtitle {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.35px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  &:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    margin-inline-end: 10px;
+  }
+}
+
+.works-wrapper-box1 {
+  padding-top: 70px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  @media only screen and (max-width: 1919px) {
+    padding-top: 50px;
+  }
+
+  @media only screen and (max-width: 1199px) {
+    padding-top: 40px;
+  }
+}
+
+.terms-container {
+  margin-bottom: 5rem;
+}
+
+.terms-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.terms-section:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 40px;
+  bottom: -35px;
+  width: 1px;
+  background-image: linear-gradient(to bottom, #5f60624d 50%, transparent 50%);
+  background-size: 10px 15px;
+  background-repeat: repeat-y;
+}
+
+.terms-section:last-child {
+  margin-bottom: 0;
+}
+
+.number-circle {
+  flex-shrink: 0;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #5f60624d;
+  color: #6b7280;
+  position: relative;
+  z-index: 1;
+}
+
+.terms-content {
+  flex: 1;
+  padding-top: 2px;
+}
+
+.terms-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.terms-text {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .terms-container {
+    margin-bottom: 4rem;
+  }
+
+  .terms-section {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .terms-section:not(:last-child)::after {
+    left: 19px;
+    bottom: -30px;
+  }
+
+  .number-circle {
+    width: 38px;
+    height: 38px;
+    font-size: 13px;
+  }
+
+  .terms-title {
+    font-size: 17px;
+  }
+
+  .terms-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-container {
+    padding: 8px 0px;
+  }
+
+  .terms-section {
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .terms-section:not(:last-child)::after {
+    left: 17px;
+    bottom: -28px;
+  }
+
+  .number-circle {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .terms-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .terms-text {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
