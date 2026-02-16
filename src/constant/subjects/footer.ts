@@ -94,9 +94,9 @@ const footerData: IFooterData = {
     phone: "888 054 7860",
     address: "410 Sandtown,\nCalifornia 56044, USA",
   },
-  // Copyright 2025 Eduglobalonline. All rights reserved.
+  // Copyright 2026 Eduglobalonline. All rights reserved.
   copyright: {
-    text: "© 2025",
+    text: "© 2026",
     author: "Eduglobalonline",
     url: "/",
     links: [{ label: "Crafted with ‪‪❤︎‬ by Woxro", url: "https://www.woxro.com" }],
